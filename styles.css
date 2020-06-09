@@ -1,16 +1,30 @@
 /*#####INDEX#####*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+    .aboutMe img {
+        max-width: 250px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
     .jumbotron-fluid .container{
       text-align: right;
       padding-right: 5vw;
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
 body {
     font-family: 'Karla', serif;
     height: 200vh;
+    
 }
+
 
 /*#####JUMBOTRON#####*/
 .jumbotron {
@@ -53,6 +67,7 @@ body {
     }*/
 
 /*#####Navbar#####*/
+
 .navbar {
 
     transition: 1s;
@@ -62,7 +77,6 @@ body {
 
 .navbar-brand {
     font-weight: 500;
-
 }
 
 
@@ -85,9 +99,23 @@ body {
     transition: 1s;
 }
 
+/*#####About Me#####*/
 
+.aboutMe h1 {
+    margin-left: 30px;
+}
 
 .aboutMe .row {
     text-align: center;
-    background-color: greenyellow;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.aboutMe .aboutMeText {
+    margin-left: 30px;
+}
+
+.aboutMe img {
+    width: 300px;
+    border-radius: 100%;
 }
