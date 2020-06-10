@@ -132,3 +132,57 @@ body {
     border-radius: 100%;
 }
 
+/*#####Photo Gallery#####*/
+
+.photoGallery a {
+    color: white!important;
+    text-decoration: none;
+}
+
+.photoGallery .jumbotron-fluid {
+    background-image: url("galleryImages/DSC_0249.JPG");
+    margin-bottom: 10px;
+}
+
+
+.photoGallery .jumbotron-fluid h1 {
+        font-size: 4.5rem;
+}
+
+.photoGallery .jumbotron-fluid p img {
+    width: 36px;
+    height: 40px;
+    opacity: 1!important;
+}
+
+.photoGallery .jumbotron-fluid p {
+    padding-top: 30px;
+    font-size: 2rem;
+    padding-left: 20px;
+}
+
+
+.photoCol {
+    padding-right: 2.5px;
+    padding-left: 2.5px;
+
+}
+
+.photoGallery img {
+    width:100%;
+    padding-bottom: 5px;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.moveImg {
+    transition: opacity 1s;
+    opacity: 1!important;
+}
+
+@media only screen and (max-width:575px) {
+    .photoGallery img {
+      opacity: 1;
+    }
+}
+

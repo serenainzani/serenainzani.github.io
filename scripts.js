@@ -2,21 +2,46 @@
 $(document).ready(function() {
     // Transition effect for navbar 
     $(window).scroll(function() {
-        // checks if window is scrolled more than 500px, adds/removes solid class
         if($(this).scrollTop() > 385) { 
             $('.navbar').addClass('solidBgr');
         } else {
             $('.navbar').removeClass('solidBgr');
         }
-        // checks if window is scrolled more than 500px, adds/removes solid class
-        if($(this).scrollTop() > 150) { 
-            $('.aboutMe').addClass('aboutMeChange');
-        } else {
-            $('.aboutMe').removeClass('aboutMeChange');
+        if (document.title == "Hi! I'm Serena Inzani") {
+            // checks if window is scrolled more than 385px, adds/removes solid class
+            if($(this).scrollTop() > 150) { 
+                $('.aboutMe').addClass('aboutMeChange');
+            } else {
+                $('.aboutMe').removeClass('aboutMeChange');
+            }
         }
+        else if (document.title == "Photo Gallery") {
+            $('.navbar').removeClass('solidBgr');
+            var numOfElement = document.querySelectorAll( "img" ).length;
+                for (i=1; i < numOfElement; i++){
+                    var myElement = document.querySelectorAll( "img" )[i];
+                    var myElementPosition = $(myElement).position();
+                    var myElementTop = myElementPosition.top
+                    // Check the viewport status
+                    if( myElementTop > $(this).scrollTop()){
+                        myElement.classList.remove("moveImg");
+                    } else {  
+                        //adds the class for the animation
+                        myElement.classList.add("moveImg");
+                    }
+                }
+            }
+
 
 
     });
+
+    
+
+    
+
+
+
 
 });
 
