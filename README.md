@@ -1,2 +1,10 @@
 # serenainzani.github.io
-Serena's Website
+
+## Title
+Serena Inzani's Personal Website
+
+## Description
+This is a website I built myself on Github, using HTML, CSS, Javascript, Bootstrap, and jQuery. 
+
+## Website Contents
+Main index page, and a photo gallery for my photography.
