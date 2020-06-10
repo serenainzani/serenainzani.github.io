@@ -16,14 +16,6 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
-    .navbar-brand {
-        display: none;
-    }
-    .travel .jumbotron {
-        background-position: center;
-    }
-}
 
 body {
     font-family: 'Karla', serif;
@@ -110,6 +102,12 @@ body {
     color: white!important;
 }
 
+@media only screen and (max-width: 400px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
 
 
 /*#####Index Sections#####*/
@@ -161,6 +159,15 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgb(224, 11, 136);
+    border: solid 3px rgb(196, 12, 119);
+}
+
+.travel .btn-primary:hover {
+    background-color: rgb(224, 11, 136);
+    border: solid 3px rgb(196, 12, 119);
+    transition: box-shadow 0.5s;
+    box-shadow: 5px 5px #eeeeee;
 }
 
 .travel .jumbotron {
@@ -190,7 +197,6 @@ body {
     transition: opacity 1s, transform 0.75s;
     opacity: 0;
     transform: translateY(20px);
-    padding-bottom: 50px;
 }
 
 
@@ -198,6 +204,78 @@ body {
     transition: opacity 1s, transform 1s;
     opacity: 1;
     transform: translateY(0);
+}
+
+/*#####More Info#####*/
+.moreInfo {
+    background-color: #0be0bd;
+    color: white;
+    padding-bottom: 50px;
+
+}
+
+.moreInfo h1 {
+    margin-left: 65px;
+    padding-top:10px;
+    padding-bottom: 20px;
+}
+
+.centerLogos {
+    display: flex;
+    justify-content: center;
+}
+
+.moreInfo .row {
+    width: 50vw;
+}
+
+@media only screen and (max-width: 700px) {
+    .moreInfo .row {
+        width: 100vw;
+    }
+}
+
+.linkedinLogo, .githubLogo {
+    background-color: white;
+    border: solid 7px white;
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 5px;
+}
+
+.linkedinLogo:hover, .githubLogo:hover {
+    transition: box-shadow 0.5s;
+    box-shadow: 5px 5px lightseagreen;
+    cursor: pointer;
+}
+
+.moreInfo button {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(224, 11, 136);
+    border: solid 5px rgb(196, 12, 119);
+    border-radius: 100%;
+}
+
+.moreInfo button:hover {
+    background-color: rgb(224, 11, 136);
+    border: solid 5px rgb(196, 12, 119);
+    transition: box-shadow 0.5s;
+    box-shadow: 5px 5px lightseagreen;
+    cursor: pointer;
+}
+
+.moreInfo {
+    transition: opacity 1s, transform 0.75s;
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+.moreInfoChange {
+    transition: opacity 1s, transform 1s;
+    opacity: 1;
+    transform: scale(1);
 }
 
 /*#####Photo Gallery#####*/
