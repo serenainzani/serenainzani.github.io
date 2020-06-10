@@ -14,9 +14,14 @@ $(document).ready(function() {
             } else {
                 $('.aboutMe').removeClass('aboutMeChange');
             }
+                        // checks if window is scrolled more than 385px, adds/removes solid class
+                        if($(this).scrollTop() > 400) { 
+                            $('.travel').addClass('travelChange');
+                        } else {
+                            $('.travel').removeClass('travelChange');
+                        }
         }
         else if (document.title == "Photo Gallery") {
-            $('.navbar').removeClass('solidBgr');
             var numOfElement = document.querySelectorAll( "img" ).length;
                 for (i=1; i < numOfElement; i++){
                     var myElement = document.querySelectorAll( "img" )[i];
