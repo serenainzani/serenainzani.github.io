@@ -176,7 +176,7 @@ body {
 
 
 .travel .col-md {
-    height: 60vh;
+    height: 70vh;
     width: 100%;
     margin-right: 15px;
     background-image: url("images/meBlueMountains.jpg");
@@ -233,6 +233,9 @@ body {
     .moreInfo .row {
         width: 100vw;
     }
+    .moreInfo .col-sm {
+        padding-bottom: 15px;
+    }
 }
 
 .Logos {
@@ -262,8 +265,8 @@ body {
     border: solid 5px rgb(196, 12, 119);
     transition: box-shadow 0.5s;
     box-shadow: 5px 5px lightseagreen;
-    cursor: pointer;*/
-}
+    cursor: pointer;
+}*/
 
 .moreInfo {
     transition: opacity 1s, transform 0.75s;
@@ -292,6 +295,7 @@ body {
 .photoGallery .jumbotron-fluid {
     background-image: url("galleryImages/DSC_0249.jpg");
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: none;
     background-position: center;
     margin-bottom: 10px;
