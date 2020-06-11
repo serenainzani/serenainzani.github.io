@@ -235,7 +235,7 @@ body {
     }
 }
 
-.linkedinLogo, .githubLogo {
+.Logos {
     background-color: white;
     border: solid 7px white;
     max-width: 120px;
@@ -243,17 +243,17 @@ body {
     border-radius: 5px;
 }
 
-.linkedinLogo:hover, .githubLogo:hover {
+.Logos:hover {
     transition: box-shadow 0.5s;
     box-shadow: 5px 5px lightseagreen;
     cursor: pointer;
 }
 
-.moreInfo button {
+/*.moreInfo button {
     width: 120px;
     height: 120px;
     background-color: rgb(224, 11, 136);
-    border: solid 5px rgb(196, 12, 119);
+    border: solid 3px rgb(196, 12, 119);
     border-radius: 100%;
 }
 
@@ -262,7 +262,7 @@ body {
     border: solid 5px rgb(196, 12, 119);
     transition: box-shadow 0.5s;
     box-shadow: 5px 5px lightseagreen;
-    cursor: pointer;
+    cursor: pointer;*/
 }
 
 .moreInfo {
