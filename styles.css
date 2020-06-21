@@ -20,6 +20,8 @@
 body {
     font-family: 'Karla', serif;
     height: 1100px;
+    color: #1c2a30;
+    background-color: #f2f6f8;
 }
 
 
@@ -83,7 +85,7 @@ body {
 }
 
 .navbar a:hover{
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     transition: 1s;
 }
@@ -94,7 +96,8 @@ body {
 }
 
 .solidBgr {
-    background-color: rgb(224, 11, 136)!important;
+    background-color: #8a053f!important;
+    opacity: 0.9;
     transition: 0.75s;
 }
 
@@ -114,6 +117,7 @@ body {
 
 .indexSection h1 {
     margin-left: 30px;
+    text-align: left;
 }
 
 
@@ -124,11 +128,30 @@ body {
 }
 
 .indexSection p {
-    text-align: left;
     padding-left: 5vw;
+    text-align: left;
 }
 
+.indexSection ul {
+    text-align: left;
+}
+
+
 /*#####About Me#####*/
+
+.aboutMe {
+    padding-top: 60px;
+}
+
+.aboutMe span {
+    display: block;
+    margin-bottom: -16px;
+    font-weight: bold;
+}
+
+.aboutMe a {
+    color: #8d2b22;
+}
 
 .aboutMe {
     transition: opacity 1s, transform 0.75s;
@@ -151,34 +174,32 @@ body {
 
 /*#####Travel Index Section#####*/
 
-.travel h1 {
-    margin-left: 80px;
+.travel {
+    padding-top: 30px;
+    padding-bottom: none;
 }
+
 
 .travel .btn-primary {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(224, 11, 136);
-    border: solid 3px rgb(196, 12, 119);
+    background-color: #f3b61f;
+    border: none;
 }
 
 .travel .btn-primary:hover {
-    background-color: rgb(224, 11, 136);
-    border: solid 3px rgb(196, 12, 119);
-    transition: box-shadow 0.5s;
-    box-shadow: 5px 5px #eeeeee;
+    background-color: #f24333;
+    border: none;
+    transition: box-shadow 1s, background-color 0.5s;
+    box-shadow: 4px 4px #dddddd;
 }
-
-.travel .jumbotron {
-    display: flex;
-}
-
 
 .travel .col-md {
-    height: 70vh;
+    height:80vh;
     width: 100%;
-    margin-right: 15px;
+    margin-right: 0px;
+    padding-right: 0px;
     background-image: url("images/meBlueMountains.jpg");
     background-repeat: no-repeat;
     background-size: 40%;
@@ -207,79 +228,28 @@ body {
 }
 
 /*#####More Info#####*/
+
 .moreInfo {
-    background-color: #0be0bd;
-    color: white;
-    padding-bottom: 50px;
-
-}
-
-.moreInfo h1 {
-    margin-left: 65px;
-    padding-top:10px;
-    padding-bottom: 20px;
-}
-
-.centerLogos {
+    color: #f2f6f8;
+    background-color: #334e58;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    opacity: 0;
 }
 
-.moreInfo .row {
-    width: 50vw;
-}
-
-@media only screen and (max-width: 700px) {
-    .moreInfo .row {
-        width: 100vw;
-    }
-    .moreInfo .col-sm {
-        padding-bottom: 15px;
-    }
+.moreInfoChange {
+    transition: opacity .5s;
+    opacity: 1;
 }
 
 .Logos {
-    background-color: white;
-    border: solid 7px white;
-    max-width: 120px;
-    max-height: 120px;
-    border-radius: 5px;
-}
-
-.Logos:hover {
-    transition: box-shadow 0.5s;
-    box-shadow: 5px 5px lightseagreen;
+    max-width: 40px;
+    max-height: 30px;
+    margin: 5px;
+    margin-right:10px;
     cursor: pointer;
 }
 
-/*.moreInfo button {
-    width: 120px;
-    height: 120px;
-    background-color: rgb(224, 11, 136);
-    border: solid 3px rgb(196, 12, 119);
-    border-radius: 100%;
-}
-
-.moreInfo button:hover {
-    background-color: rgb(224, 11, 136);
-    border: solid 5px rgb(196, 12, 119);
-    transition: box-shadow 0.5s;
-    box-shadow: 5px 5px lightseagreen;
-    cursor: pointer;
-}*/
-
-.moreInfo {
-    transition: opacity 1s, transform 0.75s;
-    opacity: 0;
-    transform: scale(0);
-}
-
-
-.moreInfoChange {
-    transition: opacity 1s, transform 1s;
-    opacity: 1;
-    transform: scale(1);
-}
 
 /*#####Photo Gallery#####*/
 

@@ -14,12 +14,12 @@ $(document).ready(function() {
             } else {
                 $('.aboutMe').removeClass('aboutMeChange');
             }
-            if($(this).scrollTop() > 400) { 
+            if($(this).scrollTop() > 560) { 
                 $('.travel').addClass('travelChange');
             } else {
                 $('.travel').removeClass('travelChange');
             }
-            if($(this).scrollTop() > 730) { 
+            if($(this).scrollTop() > 900) { 
                 $('.moreInfo').addClass('moreInfoChange');
             } else {
                 $('.moreInfo').removeClass('moreInfoChange');
