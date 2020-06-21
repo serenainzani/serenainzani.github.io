@@ -127,15 +127,10 @@ body {
     font-size: 1.2rem;
 }
 
-.indexSection p {
+.indexSection p, .indexSection ul {
     padding-left: 5vw;
     text-align: left;
 }
-
-.indexSection ul {
-    text-align: left;
-}
-
 
 /*#####About Me#####*/
 
