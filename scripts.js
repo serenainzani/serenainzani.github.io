@@ -32,7 +32,7 @@ $(document).ready(function() {
                 for (i=1; i < numOfElement; i++){
                     var myElement = document.querySelectorAll( "img" )[i];
                     var myElementPosition = $(myElement).position();
-                    var myElementTop = myElementPosition.top
+                    var myElementTop = myElementPosition.top-100;
                     // Check the viewport status
                     if( myElementTop > $(this).scrollTop()){
                         myElement.classList.remove("moveImg");
