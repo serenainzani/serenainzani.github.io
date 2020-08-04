@@ -223,6 +223,10 @@ body {
         background-size: cover;
         margin-right: 0px;
     }
+    .travel .label {
+        writing-mode: horizontal-tb;
+        height: 50px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
