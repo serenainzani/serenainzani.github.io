@@ -7,4 +7,4 @@ Serena Inzani's Personal Website
 This is a website I built myself on Github, using HTML, CSS, Javascript, Bootstrap, and jQuery. 
 
 ## Website Contents
-Main index page, and a photo gallery for my photography.
+Main index page, tech experience, and a photo gallery for my photography.
