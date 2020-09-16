@@ -1,4 +1,4 @@
-# serenainzani.github.io
+# serenainzani.com
 
 ## Title
 Serena Inzani's Personal Website
