@@ -82,6 +82,10 @@ body {
     color: white!important;
 }
 
+.navbar .active {
+    font-weight: bold;
+}
+
 .navbar a:hover{
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
@@ -177,16 +181,16 @@ body {
 }
 
 
-.travel .btn-primary {
+.travel .btn-primary, .experienceBody .btn-primary {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: #8a053f;
+    background-color: #f00e70;
     border: none;
 }
 
-.travel .btn-primary:hover {
-    background-color: #f00e70;
+.travel .btn-primary:hover, .experienceBody .btn-primary:hover{
+    background-color: #8a053f;
     border: none;
     transition: box-shadow 1s, background-color 0.5s;
     box-shadow: 4px 4px #dddddd;
@@ -253,12 +257,11 @@ body {
 /*#####More Info#####*/
 
 .moreInfo {
-    color: #f2f6f8;
     background-color: #8a053f;
     display: flex;
     justify-content: center;
     opacity: 0;
-    padding: 10px;
+    padding: 5px;
 }
 
 .moreInfoChange {
@@ -266,26 +269,18 @@ body {
     opacity: 1;
 }
 
-.Logos {
-    max-height: 50px;
-    margin: 5px;
-    margin-right:40px;
+.moreInfo a {
     cursor: pointer;
 }
 
-
-/*#####Photo Gallery#####*/
-
-.photoGallery .nav-link {
-    color: white!important;
+.moreInfo svg{
+    margin: 5px;
+    margin-right:40px;
+    
 }
 
-.photoGallery a {
-    color: white!important;
-    text-decoration: none;
-}
-
-.photoGallery .jumbotron-fluid {
+/*#####Jumbotron on General Pages#####*/
+.photoGallery .jumbotron-fluid, .experienceBody .jumbotron-fluid{
     background-image: url("galleryImages/DSC_0249.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -295,7 +290,7 @@ body {
 }
 
 
-.photoGallery .jumbotron-fluid h1 {
+.photoGallery .jumbotron-fluid h1, .experienceBody .jumbotron-fluid h1{
         font-size: 4.5rem;
 }
 
@@ -305,10 +300,22 @@ body {
     opacity: 1!important;
 }
 
-.photoGallery .jumbotron-fluid p {
+.photoGallery .jumbotron-fluid p, .experienceBody .jumbotron-fluid p {
     padding-top: 30px;
     font-size: 2rem;
     padding-left: 20px;
+
+}
+
+.photoGallery a, .experienceBody a {
+    color: white!important;
+    text-decoration: none;
+}
+
+/*#####Photo Gallery#####*/
+
+.photoGallery .nav-link {
+    color: white!important;
 }
 
 
@@ -336,3 +343,109 @@ body {
     }
 }
 
+/*#####Tech Experience#####*/
+
+.experienceBody .jumbotron-fluid {
+    background-image: url("galleryImages/DSC_0153.jpg");
+}
+
+.experienceBody .jumbotron-fluid p img {
+    max-width: 45px;
+    max-height: 36px;
+    opacity: 1!important;
+} 
+
+
+.experienceBody .row {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    margin-bottom: 50px;
+    min-height: 90vh;
+    font-size: 1.8rem;
+}
+
+.experienceBody .row .picture {
+    text-align: center;
+}
+
+#fccLogo {
+    height: 55vh;
+}
+
+.experienceBody .row img {
+    height: 75vh;
+}
+
+
+.experienceBody .bold {
+    font-weight: bold;
+}
+
+.experienceBody .btn-danger, .experienceBody .btn-primary {
+    margin-top: 35px;
+    font-size: 1.8rem;
+    border:none;
+}
+
+.experienceBody .btn-danger {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f00e70;
+    border: none;
+}
+
+.experienceBody .btn-danger:hover{
+    background-color: #f00e70;
+    border: none;
+    transition: box-shadow 1s, background-color 0.5s;
+    box-shadow: 4px 4px #dddddd;
+}
+
+.experienceBody .row p {
+    margin-bottom: 40px;
+}
+
+.experienceBody .pinkSection {
+    background-color: #8a053f;
+    color: white;
+    padding:none;
+}
+
+.experienceBody footer, .photoGallery footer {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .experienceBody .row, .experienceBody .btn-danger, .experienceBody .btn-primary {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .experienceBody img {
+        max-height: 250px;
+        margin-bottom: 50px;
+    }
+    .pinkSection img {
+        margin-bottom: 0px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .experienceBody .mainJumbotron h1 {
+            font-size: 3.5rem!important;
+    }
+    .experienceBody .mainJumbotron .lead {
+        font-size: 1.5rem!important;
+    }
+    .experienceBody .mainJumbotron .lead img {
+        transform: translateY(22px);
+    }
+    #fccLogo {
+        max-height: 150px;
+    }
+
+}
