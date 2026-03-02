@@ -6,7 +6,7 @@ function App() {
     return (
         <>
             <nav className="flex justify-between items-center w-full h-14 md:h-16 bg-fishing-aqua fixed">
-                <a href="#top">
+                <a href="https://www.linkedin.com/in/serenainzani/" target="_blank" rel="noopener noreferrer">
                     <img
                         src={logo}
                         className="logo w-12 md:w-14 m-3"
