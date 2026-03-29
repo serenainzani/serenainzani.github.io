@@ -10,7 +10,7 @@ const projectData: { [key: string]: Project } = {
     rpgNotes: {
         title: "RPG Notes App",
         description:
-            "A custom web app to record and manage RPG game notes, featuring tailored categorization and a chronological display to streamline session tracking and storytelling.",
+            "A bespoke Next.js web app to manage RPG game notes across multiple campaigns. Features OAuth, tailored categorization and a chronological display to streamline session tracking and storytelling.",
         githubLink: "https://github.com/serenainzani/rpg-notes-app",
         liveLink: "https://rpgnotes.serena.software/",
         img: "rpg-notes.JPEG",

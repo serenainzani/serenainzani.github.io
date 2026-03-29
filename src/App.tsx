@@ -1,5 +1,6 @@
 import githubIcon from "/github-logo.svg";
 import logo from "/logo.png";
+import linkedInIcon from "/linkedin.svg";
 import ProjectCard from "./components/ProjectCard";
 
 function App() {
@@ -13,17 +14,30 @@ function App() {
                         alt="Serena logo"
                     />
                 </a>
-                <a
-                    href="https://github.com/serenainzani"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img
-                        src={githubIcon}
-                        className="logo w-12 md:w-14 m-3"
-                        alt="github"
-                    />
-                </a>
+                <div className="flex">
+                    <a
+                        href="https://github.com/serenainzani"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src={githubIcon}
+                            className="logo w-12 md:w-14 m-3"
+                            alt="github"
+                        />
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/serenainzani/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src={linkedInIcon}
+                            className="logo w-12 md:w-14 mt-3 mr-3"
+                            alt="linkedin"
+                        />
+                    </a>
+                </div>
             </nav>
             <hgroup className="font-roboto-slab pt-14 flex flex-col md:pt-18 items-center">
                 <div className="font-semibold text-fishing-peach ">
@@ -45,8 +59,8 @@ function App() {
                     My Projects
                 </h2>
                 <ProjectCard project="rpgNotes" />
-                <ProjectCard project="aiRestReccs" />
                 <ProjectCard project="arduino" />
+                <ProjectCard project="aiRestReccs" />
             </main>
         </>
     );
