@@ -8,8 +8,10 @@ const ProjectCard = ({ project }: { project: string }) => {
         <section className="flex w-fit md:mb-5">
             <img
                 src={`/${img}`}
-                className="w-24 h-24 object-cover m-2
-                "
+                width={96}
+                height={96}
+                loading="lazy"
+                className="w-24 h-24 object-cover m-2"
             />
             <div className="flex flex-col justify-between">
                 <p className="text-xs md:text-base font-roboto font-normal p-2">

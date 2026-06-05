@@ -13,7 +13,7 @@ const projectData: { [key: string]: Project } = {
             "A bespoke Next.js web app to manage RPG game notes across multiple campaigns. Features OAuth, tailored categorization and a chronological display to streamline session tracking and storytelling.",
         githubLink: "https://github.com/serenainzani/rpg-notes-app",
         liveLink: "https://rpgnotes.serena.software/",
-        img: "rpg-notes.JPEG",
+        img: "rpg-notes.webp",
     },
     aiRestReccs: {
         title: "AI Restaurant Recommender",
@@ -22,21 +22,21 @@ const projectData: { [key: string]: Project } = {
         githubLink:
             "https://github.com/serenainzani/restaurant-recommender-openai",
         liveLink: "https://airestaurantreccs.serena.software/",
-        img: "ai-reccs-diner.JPEG",
+        img: "ai-reccs-diner.webp",
     },
     arduino: {
         title: "Arduino Fundamentals",
         description:
             "Developing my electionical engineering and microcontroller skills by creating mini Arduino projects.",
         githubLink: "https://github.com/serenainzani/arduino-tutorial-notes",
-        img: "arduino.jpeg",
+        img: "arduino.webp",
     },
     heartland: {
         title: "Heartland Network Graph",
         description:
             "A Juptyer Notebook project to visualize the connections between characters in the Heartland TV series, using a network graph.",
         githubLink: "https://github.com/serenainzani/heartland-network-graph",
-        img: "heartland-graph.png",
+        img: "heartland-graph.webp",
     },
 };
 
