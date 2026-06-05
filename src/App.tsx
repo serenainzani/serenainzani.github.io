@@ -9,6 +9,7 @@ function App() {
                 </h2>
                 <ProjectCard project="rpgNotes" />
                 <ProjectCard project="arduino" />
+                <ProjectCard project="heartland" />
                 <ProjectCard project="aiRestReccs" />
             </main>
         </>

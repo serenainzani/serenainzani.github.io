@@ -31,6 +31,13 @@ const projectData: { [key: string]: Project } = {
         githubLink: "https://github.com/serenainzani/arduino-tutorial-notes",
         img: "arduino.jpeg",
     },
+    heartland: {
+        title: "Heartland Network Graph",
+        description:
+            "A Juptyer Notebook project to visualize the connections between characters in the Heartland TV series, using a network graph.",
+        githubLink: "https://github.com/serenainzani/heartland-network-graph",
+        img: "heartland-graph.png",
+    },
 };
 
 export default projectData;
