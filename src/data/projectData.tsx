@@ -22,7 +22,7 @@ const projectData: { [key: string]: Project } = {
         githubLink:
             "https://github.com/serenainzani/restaurant-recommender-openai",
         liveLink: "https://airestaurantreccs.serena.software/",
-        img: "ai-reccs-diner.webp",
+        img: "eating-out.webp",
     },
     arduino: {
         title: "Arduino Fundamentals",
