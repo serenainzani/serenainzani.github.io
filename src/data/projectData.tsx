@@ -38,6 +38,12 @@ const projectData: { [key: string]: Project } = {
         githubLink: "https://github.com/serenainzani/heartland-network-graph",
         img: "heartland-graph.webp",
     },
+    seefax: {
+        title: "Seefax",
+        description: `A recreation of the BBC's Ceefax teletext service ("Page 100"), rebuilt as a modern single-page web app`,
+        githubLink: "https://github.com/serenainzani/seefax",
+        img: "ceefax.png",
+    },
 };
 
 export default projectData;
