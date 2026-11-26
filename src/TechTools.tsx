@@ -10,8 +10,20 @@ function TechTools() {
                 <p className="text-fishing-peach font-bold mb-3">
                     Some of the tools I use:
                 </p>
+                <h3 className="self-start px-20 md:px-28 font-roboto-slab font-semibold text-lg md:text-2xl tracking-tighter text-fishing-aqua">
+                    IDE
+                </h3>
                 <ToolsCard tool="vSCode" />
-                <ToolsCard tool="vSCodeTheme" last />
+                <ToolsCard tool="vSCodeThemeLight" />
+                <ToolsCard tool="vSCodeThemeDark" last />
+                <p className="flex justify-center text-fishing-peach pb-3 md:pb-7">
+                    {".".repeat(70)}
+                </p>
+                <h3 className="self-start px-20 md:px-28 font-roboto-slab font-semibold text-lg md:text-2xl tracking-tighter text-fishing-aqua">
+                    AI
+                </h3>
+                <ToolsCard tool="claude" />
+                <ToolsCard tool="googleAdk" last />
             </main>
         </>
     );
