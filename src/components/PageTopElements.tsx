@@ -23,6 +23,14 @@ function TopPageElements() {
                     >
                         Tech Tools
                     </NavLink>
+                    <NavLink
+                        to="/wiki"
+                        className={({ isActive }) =>
+                            `${isActive && "underline"}  text-fishing-yellow ml-3 text-sm md:text-xl`
+                        }
+                    >
+                        Wiki Pages
+                    </NavLink>
                 </div>
                 <div className="flex">
                     <a
