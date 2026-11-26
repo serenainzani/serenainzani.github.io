@@ -3,6 +3,13 @@
 // Without them it leaves the existing JSON untouched so local builds still work.
 import { writeFileSync } from "node:fs";
 
+// Local builds: load .env if present (real env vars, e.g. in CI, take precedence)
+try {
+    process.loadEnvFile();
+} catch {
+    // no .env file, rely on the environment
+}
+
 const token = process.env.RAINDROP_TOKEN;
 const collection = process.env.RAINDROP_COLLECTION_ID;
 const out = new URL("../src/data/wikiPages.json", import.meta.url);
