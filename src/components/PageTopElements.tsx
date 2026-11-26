@@ -2,27 +2,28 @@ import githubIcon from "/github-logo.svg";
 import linkedInIcon from "/linkedin.svg";
 import { NavLink } from "react-router";
 
+const navLinks = [
+    { to: "/", label: "Home" },
+    { to: "/tools", label: "Tech Tools" },
+    { to: "/wiki", label: "Wiki Pages" },
+];
+
 function TopPageElements() {
     return (
         <>
             <nav className="flex justify-between items-center w-full h-14 md:h-16 bg-fishing-aqua fixed">
                 <div>
-                    <NavLink
-                        to="/"
-                        className={({ isActive }) =>
-                            `${isActive && "underline"} text-fishing-yellow  ml-3 text-sm md:text-xl`
-                        }
-                    >
-                        Home
-                    </NavLink>
-                    <NavLink
-                        to="/tools"
-                        className={({ isActive }) =>
-                            `${isActive && "underline"}  text-fishing-yellow ml-3 text-sm md:text-xl`
-                        }
-                    >
-                        Tech Tools
-                    </NavLink>
+                    {navLinks.map(({ to, label }) => (
+                        <NavLink
+                            key={to}
+                            to={to}
+                            className={({ isActive }) =>
+                                `${isActive ? "underline" : ""} text-fishing-yellow ml-2 md:ml-5 text-sm md:text-xl`
+                            }
+                        >
+                            {label}
+                        </NavLink>
+                    ))}
                 </div>
                 <div className="flex">
                     <a
