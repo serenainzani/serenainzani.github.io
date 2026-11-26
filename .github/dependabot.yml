@@ -1,18 +1,18 @@
 version: 2
-updates:
-    - package-ecosystem: npm
-      directory: /
-      schedule:
-          interval: weekly
-      open-pull-requests-limit: 5
-      groups:
-          # One PR per week for all minor/patch bumps instead of one per package
-          minor-and-patch:
-              update-types:
-                  - minor
-                  - patch
 
-    - package-ecosystem: github-actions
-      directory: /
-      schedule:
-          interval: monthly
+# One combined PR per week covering every ecosystem and update type.
+multi-ecosystem-groups:
+  weekly-all:
+    schedule:
+      interval: weekly
+
+updates:
+  - package-ecosystem: npm
+    directory: /
+    patterns: ['*']
+    multi-ecosystem-group: weekly-all
+
+  - package-ecosystem: github-actions
+    directory: /
+    patterns: ['*']
+    multi-ecosystem-group: weekly-all
