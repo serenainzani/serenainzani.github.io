@@ -39,9 +39,6 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-        env:
-          RAINDROP_TOKEN: ${{ secrets.RAINDROP_TOKEN }}
-          RAINDROP_COLLECTION_ID: ${{ vars.RAINDROP_COLLECTION_ID }}
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
